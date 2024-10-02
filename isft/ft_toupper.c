@@ -1,9 +1,8 @@
 #include <stdlib.h>
-// #include <unistd.h>
 
-char ft_toupper(char c)
+char ft_toupper(int c)
 {
     if (c >= 'a' && c <= 'z')
-        c -= 32;
+        return (c -= 32);
     return (c);
 }
