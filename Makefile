@@ -6,7 +6,7 @@
 #    By: rahmoham <rahmoham@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/10/25 20:48:48 by rahmoham          #+#    #+#              #
-#    Updated: 2024/11/11 20:20:41 by rahmoham         ###   ########.fr        #
+#    Updated: 2024/11/13 18:25:35 by rahmoham         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -41,14 +41,14 @@ all: $(NAME)
 $(NAME): $(OBJS)
 	@$(AR) $(NAME) $(OBJS)
 
-bonus: $(BOBJS)
+bonus: $(OBJS) $(BOBJS)
 	@$(AR) $(NAME) $(BOBJS)
 
 %.o: %.c
 	@$(CC) -c $< -o $@
 
 clean:
-	@$(RM) $(OBJS)
+	@$(RM) $(OBJS) $(BOBJS)
 
 fclean: clean
 	@$(RM) $(NAME)
