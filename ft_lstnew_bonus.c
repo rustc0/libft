@@ -23,13 +23,3 @@ t_list	*ft_lstnew(void *content)
 	node->next = NULL;
 	return (node);
 }
-
-// int main(void)
-// {
-// 	int cntnt = 1337;
-//     t_list *node = ft_lstnew(&cntnt);
-
-//     if (node == NULL)
-//         printf("failed.\n");
-//     printf("Node content: %d\n", *(int *)(node->content));
-// }

@@ -16,7 +16,7 @@ void	ft_lstclear(t_list **lst, void (*del)(void *))
 {
 	t_list	*tmp;
 
-	if (!*lst || !del)
+	if (!lst || !del)
 		return ;
 	while (*lst)
 	{
@@ -25,28 +25,3 @@ void	ft_lstclear(t_list **lst, void (*del)(void *))
 		*lst = tmp;
 	}
 }
-
-// void	del(void *content)
-// {
-// 	free (content);
-// }
-
-// int main()
-// {
-// 	void (*delp)(void *) = del;
-
-// 	t_list	*node = ft_lstnew(ft_strdup("n0"));
-// 	node->next = ft_lstnew(ft_strdup("n1"));
-// 	node->next->next = ft_lstnew(ft_strdup("n2"));
-
-// 	printf("before  :%s\n", node->content);
-// 	printf("\t:%s\n", node->next->content);
-// 	printf("\t:%s\n", node->next->next->content);
-
-// 	ft_lstclear(&node, delp);
-
-// 	printf("after	:%s\n", node->content);
-// 	printf("\t:%s\n", node->next->content);
-// 	printf("\t:%s\n", node->next->next->content);
-
-// }

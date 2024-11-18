@@ -19,20 +19,3 @@ void	ft_lstadd_front(t_list **lst, t_list *new)
 	new->next = *lst;
 	*lst = new;
 }
-
-// int main()
-// {
-// 	int var1 = 5;
-// 	int var2 = 7;
-// 	t_list *head = ft_lstnew(&var1);
-// 	t_list *new_node = ft_lstnew(&var2);
-
-// 	printf("before adding: %d\n", *(int *)head->content);
-
-// 	ft_lstadd_front(&head, new_node);
-
-// 	printf("after adding: %d\n", *(int *)head->content);
-// 	printf("next node: %d\n", *(int *)head->next->content);
-
-// 	return 0;
-// }
